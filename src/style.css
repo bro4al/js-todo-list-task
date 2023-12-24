@@ -1,0 +1,122 @@
+@import './modal.css';
+@import './todo.css';
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+body.light-theme {
+    height: 100%;
+    min-height: 100%;
+    font: normal 400 15px/24px 'Courier New';
+    color: #121212;
+    background-color: #E0FFFF;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.3s;
+}
+
+body.dark-theme {
+    height: 100%;
+    min-height: 100%;
+    font: normal 400 15px/24px 'Courier New';
+    background-color: #121212;
+    color: #20B2AA;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.3s;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #336FEE;
+    outline: none;
+    text-decoration: none;
+}
+
+button {
+    padding: 24px;
+    margin: 16px;
+    border-radius: 30px;
+    border: 3;
+    background: gray;
+}
+
+
+.main-btn.light-theme {
+    background: #E0FFFF;
+    transition: 0.2s;
+}
+
+.main-btn.dark-theme {
+    background: #20B2AA;
+    transition: 0.3s;
+}
+
+.main-btn.light-theme:hover {
+    background: #008B8B;
+    transition: 0.2s;
+}
+
+.main-btn.dark-theme:hover {
+    background: #008B8B;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #6e87e1;
+}
+
+img {
+    width: 100%;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+.app {
+    margin: 0 auto;
+    visibility: visible;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.add-todo {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.todo-list {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.todo-list__item + .todo-list__item {
+    margin-top: 20px;
+}
